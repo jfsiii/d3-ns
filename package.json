@@ -1,0 +1,24 @@
+{
+  "name": "d3-ns",
+  "version": "0.0.0",
+  "description": "The d3.ns function from d3",
+  "main": "index.js",
+  "scripts": {
+    "build": "smash node_modules/d3/src/start.js node_modules/d3/src/core/ns.js node_modules/d3/src/end.js | uglifyjs - -b -indent-level=2 -o index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jfsiii/d3-ns.git"
+  },
+  "keywords": [
+    "d3"
+  ],
+  "author": "JFSIII",
+  "license": "ISC",
+  "devDependencies": {
+    "d3": "^3.4.4",
+    "smash": "0.0.12",
+    "uglify-js": "^2.4.13"
+  }
+}
